@@ -26,6 +26,17 @@ github:
     clientAuthenticationScheme: form
   resource:
     userInfoUri: https://api.github.com/user
+google:
+  client:
+    clientId: 621835928674-70lomc97kkf38a0gk6gad1mb8uv0ud3k.apps.googleusercontent.com
+    clientSecret: ${CLIENT_SECRET}
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+    clientAuthenticationScheme: form
+    scope:
+      - profile
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
 
 logging:
   level:
